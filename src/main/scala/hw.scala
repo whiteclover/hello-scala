@@ -1,4 +1,5 @@
 import Hello._
+import p.s._
 
 object Hi {
   def main(args: Array[String]) = {
@@ -11,8 +12,16 @@ object Hi {
 
   	val h = new H("hello class")
   	h.say()
+    PP.say()
+    Stmt.for_stmt()
+
+    val flyingBirds = List(
+    new Pigeon,
+    new Hawk)
+    flyingBirds.foreach(bird => bird.fly())
+    flyingBirds.foreach(bird => bird.swim())
   }
-
-
+  
   def say(word: String) = println(word)
+
 }
